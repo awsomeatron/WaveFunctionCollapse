@@ -1,0 +1,4 @@
+{
+  "texture": "grass.png",
+  "neighbours": ["grass", "sand"]
+}
