@@ -10,8 +10,9 @@ def main():
     wave = WaveFunction(25, 25)
     while not wave.has_collapsed:
         wave.collapse()
-        wave.draw(screen)
-        pygame.display.update()
+    wave.fill("rock")
+    wave.draw(screen)
+    pygame.display.update()
 
     while True:
         for e in pygame.event.get():
@@ -24,8 +25,9 @@ def main():
                     wave = WaveFunction(25, 25)
                     while not wave.has_collapsed:
                         wave.collapse()
-                        wave.draw(screen)
-                        pygame.display.update()
+                    wave.fill("rock")
+                    wave.draw(screen)
+                    pygame.display.update()
 
 
 if __name__ == '__main__':
